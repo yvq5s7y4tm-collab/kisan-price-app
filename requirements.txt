@@ -1,0 +1,7 @@
+streamlit
+pandas
+matplotlib
+pandas
+streamlit
+requests
+lxml        # needed for pandas.read_html

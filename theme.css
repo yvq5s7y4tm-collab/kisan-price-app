@@ -1,0 +1,83 @@
+/* --- Global App Theme --- */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Responsive scaling for mobile */
+@media (max-width: 768px) {
+  .price-card { padding: 14px; font-size: 14px; }
+  h1, h2, h3 { font-size: 18px; }
+  .bottom-nav { height: 60px; font-size: 11px; }
+}
+
+.stApp {
+    background-color: #ffffff;
+    color: #0b3b2e;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Streamlit main container padding fix (for bottom nav) */
+.block-container {
+    padding-bottom: 90px !important;
+}
+
+h1, h2, h3, h4 {
+    color: #0b3b2e;
+    font-weight: 700;
+}
+
+/* --- Price Card --- */
+.price-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-bottom: 12px;
+}
+.price-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0b3b2e;
+}
+.price-val {
+    font-size: 22px;
+    font-weight: 800;
+    color: #0b3b2e;
+}
+
+/* --- Bottom Navigation with Glow --- */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0; right: 0;
+    height: 70px;
+    background-color: #163a3a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #c8f7dc;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.3);
+    z-index: 9999;
+}
+.nav-item {
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.nav-icon {
+    display: block;
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+.nav-item:hover,
+.nav-item.active {
+    color: #ffffff;
+    text-shadow: 0 0 10px #5cff9b, 0 0 20px #36ff8c;
+    transform: scale(1.1);
+}
+
+/* --- Sidebar fixes (for language picker) --- */
+.sidebar .sidebar-content, .stSidebar {
+    background: #ffffff;
+}
